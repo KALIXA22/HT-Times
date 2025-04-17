@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HT Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.8;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            font-size: 1.2rem;
+        }
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        .date {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        .navbar {
+            background: #444;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0 10px;
+        }
+        .navbar ul li {
+            margin: 5px 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #f4a261;
+        }
+        .content {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .main-article h2 {
+            color: #222;
+            margin-bottom: 15px;
+        }
+        .main-article ul {
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .dark-mode {
+            background: #111;
+            color: #ddd;
+        }
+        .toggle-dark-mode {
+            background: #f4a261;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 8px 12px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .newsletter input {
+            padding: 8px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 8px 12px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comments-section {
+            margin-top: 20px;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .comments-section textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .comments-section button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .content {
+                width: 90%;
+                padding: 15px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar ul li {
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>The HT Times</h1>
+            <p class="subtitle">Daily Updates | Reliable News</p>
+            <p class="date">Sunday, March 10, 2025</p>
+            <button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ai.html">News</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#politics">Politics</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search articles...">
+        <button>Search</button>
+    </div>
+    <div class="newsletter">
+        <h3>Subscribe to our Newsletter</h3>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </div>
+    <main class="content">
+        <article class="main-article">
+            <h2>Breaking News: The Future of AI 🤖</h2>
+            <p>Artificial intelligence is reshaping industries, from healthcare to finance...</p>
+
+        </article>
+        <div class="comments-section">
+            <h3>Leave a Comment</h3>
+            <textarea placeholder="Write a comment..."></textarea>
+            <button>Submit</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 The HT Times. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+ 
+    </script>
+</body>
+</html>
